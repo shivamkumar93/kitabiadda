@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="w-full fixed top-0">
+        <div class="bg-[#3D8D7A] text-white text-lg w-full flex items-center justify-evenly px-6 py-4 space-x-6">
+
+
+            <a href="#">
+                <img src="https://www.kitabiadda.com/assets/logo5.png" alt="Logo" class="h-12 w-auto" />
+            </a>
+
+            <form class="flex-grow max-w-lg">
+                <div class="relative">
+                    <input type="search" id="search-dropdown"
+                        class="block w-full px-4 py-2 pr-12 text-black rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Search books..." required />
+                    <button type="submit"
+                        class="absolute top-0 right-0 h-full px-4 text-white bg-blue-700 rounded-e-lg hover:bg-blue-800">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+
+            <div class="flex space-x-6 text-white text-lg justify-center items-center">
+                <a href="wishlist.php"
+                    class="relative p-2 text-[#FBFFE4] hover:bg-[#4a9c87] rounded-full transition-all duration-200 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                        stroke="currentColor" class="w-6 h-6 group-hover:scale-110 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="#" class="hover:underline"><svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:underline"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"
+                        class="w-6 h-6 group-hover:scale-110 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z">
+                        </path>
+                    </svg></a>
+                <a href="#"
+                    class="flex items-center justify-center space-x-1 border-gray-200 px-3 py-2 bg-white  text-gray-800 border rounded-full ">
+                    <span><svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 transition-transform duration-300 group-hover:rotate-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg></span>
+                    <span class="text-lg text-gray-800">Sell Used Book</span>
+                </a>
+                <a href="#" class="text-white text-lg border rounded-full px-7 font-semibold py-2">Login</a>
+            </div>
+        </div>
+        <div class="w-full  justify-start items-center justify-center overflow-x-auto whitespace-nowrap py-2 border-b px-3">
+            <a href="" class="text-sm font-semibold text-gray-500 border ml-2 rounded-full px-3 py-1">python</a>
+            <a href="" class="text-sm font-semibold text-gray-500 border ml-2 rounded-full px-3 py-1">python</a>
+            <a href="" class="text-sm font-semibold text-gray-500 border ml-2 rounded-full px-3 py-1">python</a>
+            <a href="" class="text-sm font-semibold text-gray-500 border ml-2 rounded-full px-3 py-1">python</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
