@@ -2,5 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def home(request):
-    return render(request, 'public-panel/home.html')
+def header(request):
+    return render(request, 'public-panel/header.html')
+
+def footer(request):
+    return render(request, 'public-panel/footer.html')
