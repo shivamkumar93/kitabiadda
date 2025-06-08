@@ -5,7 +5,8 @@ from kitab.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("header/",header, name="homepage"),
+    path("", home, name="homepage"),
+    path("header/",header, name="headerpage"),
     path("footer/",footer, name="footerpage"),
 
 ]
