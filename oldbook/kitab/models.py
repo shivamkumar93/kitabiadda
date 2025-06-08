@@ -13,3 +13,4 @@ class Book(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     author = models.CharField(max_length=50)
     book_image = models.ImageField(upload_to='images')
+    
