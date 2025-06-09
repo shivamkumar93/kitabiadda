@@ -11,42 +11,53 @@
 
 <body>
     {% extends 'public-panel/header.html' %}
-    
+
 
     {% block content %}
+<!-- Category secssion here -->
+    <div
+        class="w-full bg-white justify-start items-center justify-center overflow-x-auto whitespace-nowrap py-2 border-b px-3">
+
+        {% for category in categories %}
+
+        <a href=""
+            class="text-sm font-semibold bg-gray-200 text-gray-800 border ml-2 rounded-full px-5 py-1">{{category.cat_title}}</a>
+
+        {% endfor %}
+    </div>
 
 
-
-
-    <!-- <div id="default-carousel" class="relative z-10 w-full top-32" data-carousel="slide">
+    <div id="default-carousel" class="relative  w-full top-20" data-carousel="slide">
         <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <div class="relative h-60 overflow-hidden rounded-lg md:h-96">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://picsum.photos/200/300"
                 class="absolute block w-full h-full object-fit xl:object-fit xl-contain sm:object-fit md:object-fit md:h-full lg-fit"
                 alt="Slide 1">
         </div>
-        <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-2.svg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://picsum.photos/200/300"
+                class="absolute block w-full h-full object-fit xl:object-fit xl-contain sm:object-fit md:object-fit md:h-full lg-fit"
+                alt="Slide 1">
         </div>
-        <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-3.svg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://picsum.photos/200/300"
+                class="absolute block w-full h-full object-fit xl:object-fit xl-contain sm:object-fit md:object-fit md:h-full lg-fit"
+                alt="Slide 1">
         </div>
-        <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-4.svg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://picsum.photos/200/300"
+                class="absolute block w-full h-full object-fit xl:object-fit xl-contain sm:object-fit md:object-fit md:h-full lg-fit"
+                alt="Slide 1">
         </div>
-        <!-- Item 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-5.svg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://picsum.photos/200/300"
+                class="absolute block w-full h-full object-fit xl:object-fit xl-contain sm:object-fit md:object-fit md:h-full lg-fit"
+                alt="Slide 1">
         </div>
+        
+        
     </div>
     <!-- Slider indicators -->
     <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
@@ -88,9 +99,9 @@
             <span class="sr-only">Next</span>
         </span>
     </button>
-    </div> -->
-
-    <div class="flex flex-col mt-10">
+    </div>
+<!--Book secssion here -->
+    <div class="flex flex-col mt-24 py-5">
         <div class="flex flex-1 px-6">
             <span class="text-black text-2xl font-semibold">New Book</span>
             <span class="flex flex-1 justify-end  "><a href="#"
@@ -98,13 +109,13 @@
                     all</a></span>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-6 px-10 mt-4 gap-4 pb-5">
+        <div class="grid grid-cols-2 md:grid-cols-5 px-10 mt-4 gap-4 ">
 
 
             <div
                 class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
-                <a href="#" class="w-full">
-                    <img class="p-6 rounded-t-lg rounded-lg" src="https://picsum.photos/180/200" alt="product image" />
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
                 </a>
                 <div class="px-5">
                     <div>
@@ -112,7 +123,6 @@
                     </div>
 
                     <div class="flex items-center mt-2.5 mb-5">
-
                         <span>NCRT company name</span>
                     </div>
                     <div class="flex items-center justify-between">
@@ -124,11 +134,250 @@
                         <a href="#"
                             class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
                             to cart</a>
-
                     </div>
                 </div>
             </div>
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
 
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="flex flex-col mt-24 py-5">
+        <div class="flex flex-1 px-6">
+            <span class="text-black text-2xl font-semibold">Old Book</span>
+            <span class="flex flex-1 justify-end  "><a href="#"
+                    class="border border-red-500 text-red-600 text-md font-medium px-5 py-2 rounded-full hover:underline">View
+                    all</a></span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-5 px-10 mt-4 gap-4 ">
+
+
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-4">
+                <a href="#" class="w-full flex ">
+                    <img class="py-4 px-10 rounded-t-lg rounded-lg" src="https://picsum.photos/250/250" alt="product image" />
+                </a>
+                <div class="px-5">
+                    <div>
+                        <p class="text-2xl font-medium">physic book</p>
+                    </div>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <span>NCRT company name</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
+                        <span class="justify-end">book type </span>
+                    </div>
+                    <hr>
+                    <div class="mt-5  flex flex-1">
+                        <a href="#"
+                            class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
     </div>
